@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modal_Box</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,15 +16,13 @@
             <div class="modal-content">
                 <span class="close" onclick="closeModel()">&times;</span>
                 <form class="form-container">
-                    <!-- <form action="http://127.0.0.1:5000/success" method="post" class="form-container"> -->
                     <h1>Login</h1>
                     <label for="email"><b>Username</b></label>
                     <input type="text" id="username" placeholder="Enter Email" name="username" required>
                     <label for="psw"><b>Password</b></label>
                     <input type="password" id="password" placeholder="Enter Password" name="password" required>
                     <span id="id_showPassword" class="showPassword" onclick="showPassword()"> &#x1f614;</span>
-                    <button id="submitButton" onclick="setData(event)" class="btn btn-success">Submit</button>
-                    <!-- <button type="submit" onclick="{{ url_for('success') }}" class="btn">Submit</button>   -->
+                    <button id="submitButton" onclick="" class="btn btn-success">Submit</button>
                 </form>
                 <div id="message"></div>
             </div>
@@ -32,7 +30,7 @@
         </div>
     </div>
 
-
+    <script src="script.js"></script>
 
 </body>
 
